@@ -10,6 +10,7 @@
     --thirdColor:#88b2da71;
     --pagePadding: 0 2vh;
 }
+
 p{
     user-select: none;
 }
@@ -26,6 +27,7 @@ p{
     height: 100%;
 }
 .searchInp{
+    padding: 0 7px;
     width: 100%;
     height: 100%;
 }
@@ -36,11 +38,106 @@ p{
     font-size: 18px;
     border: none;
     outline: none;
-    border-radius: 40px;
+    border-radius: 80px;
 }
 .searchField i{
     position: absolute;
-    left: 4.5%;
-    margin-bottom: 2px;
-    font-size: 18px
+    left: 24.5px;
+    margin-bottom: 2.5px;
+    font-size: 18px;
+    color: gray;
+}
+.navDown{
+    /* background-color: #0d43a6; */
+    position: fixed;
+    bottom: 0px;
+    border-top: 1px solid rgb(196, 191, 191);
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+    padding: 8px 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    margin-top: 700px;
+    min-height: 55px;
+}
+.navDown img{
+    height: 35px;
+    border-radius: 17.5px;
+}
+.navDown i{
+    font-size: 35px;
+}
+.navBottomItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.exploreMain{
+    background-color: var(--thirdColor);
+}
+.postsContainer{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 3000px;
+}
+.sectionContainer{
+    display: flex;
+    /* justify-content: space-around; */
+    width: 100%;
+    height: 200px;
+    background-color: blue !important;
+}
+.reelSec{
+    width: 33.3%;
+    height: 100%;
+}
+.reelSec > div{
+    width: 100%;
+    height: 100%;
+}
+.reelSec > div img{
+    width: 100%;
+    height: 100%;
+}
+.postsSec{
+    display: flex;
+    width: 67.3%;
+    background-color: aqua;
+}
+.postsSec > div{
+    width: 100%;
+    height: 100%;
+}
+.firstCol{
+    width: 60%;
+    background-color: red;
+    
+}
+.secondCol{
+    width: 50%;
+    background-color: purple;
+    height: 100%;
+}
+.firstCol > div{
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+}
+.secondCol > div{
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+}
+.firstCol > div img{
+    width: 100%;
+    height: 100%;
+}
+.secondCol > div img{
+    width: 100%;
+    height: 100%;
 }
