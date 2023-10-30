@@ -27,6 +27,7 @@ p{
     height: 100%;
 }
 .searchInp{
+    padding-top: 7px !important;
     padding: 0 7px;
     width: 100%;
     height: 100%;
@@ -34,18 +35,26 @@ p{
 .searchField input{
     width: 100%;
     height: 100%;
-    padding: 0 40px;
+    padding: 0 25px;
     font-size: 18px;
     border: none;
     outline: none;
     border-radius: 80px;
 }
-.searchField i{
+.searchField .icons{
     position: absolute;
-    left: 24.5px;
-    margin-bottom: 2.5px;
+    right: 24.5px;
+    top: 23px;
+    /* margin-bottom: 2.5px; */
     font-size: 18px;
     color: gray;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.close{
+    font-size: 25px;
 }
 .navDown{
     /* background-color: #0d43a6; */
@@ -75,6 +84,7 @@ p{
     justify-content: space-around;
 }
 .exploreMain{
+    position: relative;
     padding: 10px 0;
     padding-bottom: 55px;
     background-color: var(--thirdColor);
@@ -103,39 +113,48 @@ p{
 .reelSec > div{
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 .reelSec > div img{
     width: 100%;
     height: 100%;
 }
+.reelSec > div:hover{
+    filter: brightness(80%);
+}
 .postsSec{
     display: flex;
     width: 67.3%;
-    background-color: aqua;
 }
 .postsSec > div{
     width: 100%;
     height: 100%;
 }
 .firstCol{
-    width: 60%;
-    background-color: red;
-    
+    width: 60%;   
 }
 .secondCol{
     width: 50%;
-    background-color: purple;
     height: 100%;
 }
 .firstCol > div{
     width: 100%;
     height: 50%;
-    background-color: yellow;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 .secondCol > div{
     width: 100%;
     height: 50%;
-    background-color: yellow;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.secondCol > div:hover{
+    filter: brightness(80%);
+}
+.firstCol > div:hover{
+    filter: brightness(80%);
 }
 .firstCol > div img{
     width: 100%;
@@ -161,15 +180,64 @@ p{
     display: flex;
 }
 .postsSecRow > div{
+    cursor: pointer;
     width: 100%;
     height: 100%;
+    transition: all 0.2s;
 }
 .postsSecRow > div img{
     width: 100%;
     height: 100%;
 }
+.postsSecRow > div:hover{
+    filter: brightness(80%);
+}
 .postsContainer > .sectionContainer:nth-child(3){
     flex-direction: row-reverse;
+}
+.userSearchBar{
+    min-width: 100%;
+    height: 88vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    overflow: auto;
+    z-index: 1000;
+    transition: all 0.2s;
+    padding-bottom: 28px;
+}
+.searchedUserContainer{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    width: 100%;
+}
+.searchedUser{
+    padding: 10px 10px;
+    cursor: pointer;
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #c4c4c4a1;
+    padding-bottom: 5px;
+    transition: all 0.2s;
+    width: 100%;
+    height: 65px;
+}
+.searchedUser:hover{
+    background-color: whitesmoke;
+}
+.searchedUser:hover p{
+    color: var(--mainColor);
+}
+.searchedUser img{
+    height: 40px;
+    border-radius: 25px;
+}
+.nonActive{
+    opacity: 0 !important ;
+    visibility: hidden !important;
 }
 @media only screen and (max-width: 650px){
     .sectionContainer{
