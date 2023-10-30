@@ -86,24 +86,15 @@ p{
 .exploreMain{
     position: relative;
     padding: 10px 0;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
     background-color: var(--thirdColor);
     display: flex;
     flex-direction: column;
-}
-.postsContainer{
-    /* padding: 10px 0; */
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    /* gap: 300px; */
 }
 .fullrowSection{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1000px;
 }
 .fullrowSection > div{
     width: 100% !important;
@@ -124,9 +115,6 @@ p{
 }
 .postsSecRow > div:hover{
     filter: brightness(80%);
-}
-.postsContainer > .sectionContainer:nth-child(3){
-    flex-direction: row-reverse;
 }
 .userSearchBar{
     min-width: 100%;
@@ -171,12 +159,4 @@ p{
 .nonActive{
     opacity: 0 !important ;
     visibility: hidden !important;
-}
-@media only screen and (max-width: 650px){
-    .sectionContainer{
-        height: 300px;
-    }
-    .fullrowSection{
-        height: 300px;
-    }
 }
