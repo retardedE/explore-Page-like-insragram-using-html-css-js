@@ -99,82 +99,15 @@ p{
     width: 100%;
     /* gap: 300px; */
 }
-.sectionContainer{
-    display: flex;
-    /* justify-content: space-around; */
-    width: 100%;
-    height: 600px;
-    background-color: blue !important;
-}
-.reelSec{
-    width: 33.3%;
-    height: 100%;
-}
-.reelSec > div{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-.reelSec > div img{
-    width: 100%;
-    height: 100%;
-}
-.reelSec > div:hover{
-    filter: brightness(80%);
-}
-.postsSec{
-    display: flex;
-    width: 67.3%;
-}
-.postsSec > div{
-    width: 100%;
-    height: 100%;
-}
-.firstCol{
-    width: 60%;   
-}
-.secondCol{
-    width: 50%;
-    height: 100%;
-}
-.firstCol > div{
-    width: 100%;
-    height: 50%;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-.secondCol > div{
-    width: 100%;
-    height: 50%;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-.secondCol > div:hover{
-    filter: brightness(80%);
-}
-.firstCol > div:hover{
-    filter: brightness(80%);
-}
-.firstCol > div img{
-    width: 100%;
-    height: 100%;
-}
-.secondCol > div img{
-    width: 100%;
-    height: 100%;
-}
 .fullrowSection{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 600px;
-    background-color: blue !important;
-    overflow: hidden;
+    height: 1000px;
 }
 .fullrowSection > div{
     width: 100% !important;
-    height: 50%;
+    height: 100% !important;
 }
 .postsSecRow{
     display: flex;
