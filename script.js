@@ -21,6 +21,6 @@ let arrayBoxesClicked= Array.from(clickedPost)
 let arrayClosePost= Array.from(closePost)
 for(let i=0; i<arrayBoxes.length;i++){
     arrayBoxes[i].addEventListener('click', ()=>{
-        arrayBoxesClicked[i].classList.remove('nonActive')
+        arrayBoxesClicked[i].classList.toggle('nonActive')
     })
 }
